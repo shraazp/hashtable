@@ -171,8 +171,8 @@ public class MyLinkedList<K>  {
 	 * method to print the nodes of linked list
 	 * @return entire linked list
 	 */
-	public String printMyNodes() {
-		return "My Nodes: "+head;
+	public void printMyNodes() {
+		System.out.println("My Nodes: "+head);
 	}
 	
 	

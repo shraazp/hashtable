@@ -7,13 +7,13 @@ package HashClass;
 public class MyHashMapTest {
 
 	public static void main(String[] args) {
-		String sentence="To be or not to be";
+		String sentence="Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 
-		MyHashMap<String,Integer>myLinkedHashMap=new MyHashMap<>();
+		MyLinkedHashMap<String,Integer>myLinkedHashMap=new MyLinkedHashMap<>();
 		String[] words=sentence.toLowerCase().split(" ");
 		for(String word:words)
 		{
-			System.out.println(word);
+			
 			Integer value=myLinkedHashMap.get(word);
 			if(value==null) value=1;
 			else
@@ -21,9 +21,8 @@ public class MyHashMapTest {
 			myLinkedHashMap.add(word,value);
 		}
 		System.out.println(myLinkedHashMap);
-		int frequency=myLinkedHashMap.get("to");
-		
-		System.out.println("frequency of to is "+frequency);
+		int frequency=myLinkedHashMap.get("paranoid");
+		System.out.println("frequency of paranoid is "+frequency);
 
 	}
 

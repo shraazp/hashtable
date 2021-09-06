@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class MyLinkedHashMap<K,V> {
 	private final int numBuckets;
 	ArrayList<MyLinkedList<K>> myBucketArray;
-	MyLinkedList<K>  myLinkedList;
+	 MyLinkedList<K>  myLinkedList;
 	public MyLinkedHashMap()
 	{
 		this.numBuckets=10;
@@ -62,9 +62,8 @@ public class MyLinkedHashMap<K,V> {
 		}
 	}
 	@Override
-	public String toString()
-	{
-		return "MyLinkedHashMap{" + myLinkedList.printMyNodes() + '}';
+	public String toString() {
+		return "MyLinkedHashNodes{" +myBucketArray+ '}';
 	}
 
 }

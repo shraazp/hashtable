@@ -22,7 +22,7 @@ public class MyHashMap<K,V> {
 		if(myMapNode==null)
 		{
 			myMapNode=new MyMapNode<>(key,value);
-			this.myLinkedList.append(myMapNode);
+			this.myLinkedList.add(myMapNode);
 		}
 		else
 		{
@@ -31,7 +31,7 @@ public class MyHashMap<K,V> {
 	}
 	@Override
 	public String toString() {
-		return "MyHashNodes{" + myLinkedList.printMyNodes() + '}';
+		return "MyHashNodes{" + myLinkedList + '}';
 	}
 	
 	
